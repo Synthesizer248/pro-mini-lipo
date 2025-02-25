@@ -1,0 +1,11 @@
+# Arduino
+*.hex
+*.elf
+*.o
+
+# IDE
+.vscode/
+*.ino.cpp
+
+# Misc
+*.bak
