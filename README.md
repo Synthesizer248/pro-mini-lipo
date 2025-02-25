@@ -25,3 +25,10 @@ A DIY LiPo/Li-ion battery charger with internal resistance measurement and State
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/Synthesizer248/pro-mini-lipo.git
+2.Install Libraries:
+-Adafruit_INA219
+-U8g2
+3.Encoder Install via Arduino IDE Library Manager.
+4.Upload Code: Open src/LiPoCharger.ino in Arduino IDE and upload to your Pro Mini.
+5.Assemble Hardware: Follow docs/hardware.md for wiring details.
+6.Test: Power on, use the encoder to navigate, and charge a battery.
