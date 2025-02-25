@@ -32,3 +32,12 @@ A DIY LiPo/Li-ion battery charger with internal resistance measurement and State
 4.Upload Code: Open src/LiPoCharger.ino in Arduino IDE and upload to your Pro Mini.
 5.Assemble Hardware: Follow docs/hardware.md for wiring details.
 6.Test: Power on, use the encoder to navigate, and charge a battery.
+ 
+## Usage
+See 'docs/usage.md' for detailed instructions on charging, resistance measurement, and calibration.
+
+License
+This project is licensed under the 'MIT License' - see the LICENSE file.
+
+Contributing
+Pull requests are welcome! Please open an issue first to discuss changes.
