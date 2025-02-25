@@ -24,4 +24,4 @@ A DIY LiPo/Li-ion battery charger with internal resistance measurement and State
 ## Setup
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Synthesizer_248/LiPo-Charger-Arduino.git
+   git clone https://github.com/Synthesizer248/pro-mini-lipo.git
