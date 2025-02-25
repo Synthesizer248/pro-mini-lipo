@@ -1,0 +1,30 @@
+
+---
+
+#### 3. Hardware Description (`docs/hardware.md`)
+Details the circuit for replication.
+
+```markdown
+# Hardware Description
+
+## Components
+- **Arduino Pro Mini (5V, 16MHz)**: Main controller.
+- **INA219**: Voltage/current sensor (I2C: A4 SDA, A5 SCL).
+- **LM2596**: Buck converter, modified:
+  - VIN: Schottky diode cathode (12V in).
+  - VOUT: Battery +.
+  - FB: R1 (1.2kΩ) to VOUT, R2 (330Ω) to GND, PWM (Pin 9) via RC filter (10kΩ, 1µF) and 10kΩ injection resistor.
+- **0.96" OLED**: I2C (A4 SDA, A5 SCL).
+- **Encoder**: CLK (D2), DT (D3), SW (D4).
+- **MOSFET (IRF540)**: Gate (D6), drain to 10Ω load, source to GND (for resistance test).
+- **Buzzer**: D7 to GND.
+- **Power Supply**: 12V 3A via Schottky diode.
+- **Misc**: 0.1Ω shunt (INA219), capacitors (100µF, 10µF), resistors as needed.
+
+## Schematic
+![Schematic](schematic.png)  
+*(Create this using Fritzing or similar and replace with actual image)*
+
+## Notes
+- Adjust R1/R2 on LM2596 to set VOUT range (3V-4.2V with PWM 0-255).
+- Ensure proper heat sinking for LM2596.
